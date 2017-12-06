@@ -2,14 +2,13 @@
 
 To activate this keyboard, you have to
  
-i) add some files from here into the directory 'xkb' in your 
-   system, 
+i) add some files from here into the directory 'xkb' in your system, 
 ii) execute a compile command, and then 
 iii) change some system settings on your machine so that your 
    typed input can make use of the new keyboard layout.
  
-The first two actions require superuser priviliges to execute
-'su' or 'sudo' command.
+These actions require superuser priviliges to execute 'su' or 
+'sudo' command.
 
 The steps needed to install and use US-Polymath keyboard layout
 are the following:
@@ -17,12 +16,12 @@ are the following:
 1. Download the file US-PolymathLnx.zip and unzip it into some 
 local directory, e.g. 'US-PolymathLnx'. 
 
-2. Find the path to 'xkb' in your system. In most distributions 
-of Linux, this path is '/usr/share/X11/xkb', but your installation 
-might not use this standard path. You can determine the path for 
-your machine by executing the 'find' command, as follows:
+2. Find the path to 'xkb' in your system. 
+The standard path is '/usr/share/X11/xkb'. 
+In case it is different in your installation, you can determine this 
+path by executing the 'find' command, as follows:
 	find / -name xkb -print
-The example commands below use the standard location. 
+The example commands below assume the path '/usr/share/X11/xkb'.
 
 3. Become a superuser, by executing the command 
 	su
@@ -64,13 +63,13 @@ above changes to take effect.
 
 8. To make use of the US-Polymath keyboard layout in your
 input, you have to change some system settings. Depending on
-which Linux distribution and desktop interface you are using,
-this might require typing special commands or, with the more
-convenient graphics interface, working with 'System Settings,
+your Linux distribution (e.g., Debian, Fedora, OpenSUSE, Ubuntu)
+and your desktop environment (e.g., Gnome, KDE, Mate), this might
+require typing special commands or, with more convenient 
+graphics interfaces, working with 'System Settings',
 'Control Panel', etc. 
 
-The following example is for OpenSUSE distribution and KDE
-desktop.
+The following example is for OpenSUSE with KDE.
 
 A. From the 'Application Launcher', select 'Settings', then 
 'Configure Desktop'. From the 'Hardware' section, select 
